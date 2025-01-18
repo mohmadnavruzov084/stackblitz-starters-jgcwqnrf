@@ -17,11 +17,11 @@ removeParagraph.remove();
 spanTest.appendChild(paragraph);
 
 let changeUrlImg = document.querySelector('.myLink');
-changeUrlImg.setAttribute("src", "img/cute_cat-2.jpg");
-let changeUrlImg = document.querySelector('.myLink');
+changeUrlImg.setAttribute('src', 'cute_cat-2.jpg');
+changeUrlImg = document.querySelector('.myLink');
 if (changeUrlImg) {
   console.log('Элемент найден', changeUrlImg)
-   changeUrlImg.setAttribute("src", "img/cute_cat-2.jpg");
+   changeUrlImg.setAttribute('src', 'cute_cat-2.jpg');
  } else {
      console.error('Элемент не найден')
  }
