@@ -10,18 +10,18 @@ spanTest.classList.remove('highlighted');
 
 let paragraph = document.createElement('p');
 paragraph.textContent = 'It new paragraph';
-
 let removeParagraph = paragraph.classList.add('pVanRemove');
-removeParagraph.remove();
 
+if(removeParagraph){
+  removeParagraph.remove();
+}
 spanTest.appendChild(paragraph);
 
-let changeUrlImg = document.querySelector('.myLink');
-changeUrlImg.setAttribute('src', 'cute_cat-2.jpg');
-changeUrlImg = document.querySelector('.myLink');
+
+ let changeUrlImg = document.querySelector('.myLink');
 if (changeUrlImg) {
-  console.log('Элемент найден', changeUrlImg)
-   changeUrlImg.setAttribute('src', 'cute_cat-2.jpg');
- } else {
-     console.error('Элемент не найден')
- }
+  console.log('Элемент найден', changeUrlImg);
+  changeUrlImg.setAttribute('src', 'img/cute_cat-2.jpg');
+} else {
+  console.error("Элемент с классом 'myLink' не найден");
+}
